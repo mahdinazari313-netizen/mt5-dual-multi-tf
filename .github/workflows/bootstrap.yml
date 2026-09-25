@@ -9,7 +9,6 @@ permissions:
 
 jobs:
   bootstrap:
-    if: ${{ hashFiles('.bootstrap/tar-part-*.b64') != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
